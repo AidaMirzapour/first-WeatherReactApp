@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./Weather.css";
 
 export default function Weather() {
   const [city, setCity] = useState("");
@@ -38,8 +39,9 @@ export default function Weather() {
         type="search"
         placeholder="Enter a city..."
         onChange={getCity}
+        className="SearchInput"
       ></input>
-      <input type="submit" value={"Search"}></input>
+      <input type="submit" value={"Search"} className="submitInput"></input>
     </form>
   );
 
@@ -48,6 +50,7 @@ export default function Weather() {
       <div className="Weather">
         {searchForm}
         <ul>
+          <li>{city.toUpperCase()}</li>
           <li>Temperature: {detail.temperature}°C</li>
           <li>Description: {detail.description}</li>
           <li>Humidity: {detail.humidity}%</li>
@@ -59,10 +62,6 @@ export default function Weather() {
       </div>
     );
   } else {
-    return (
-      <div className="Weather">
-        {searchForm}
-      </div>
-    );
+    return <div className="Weather">{searchForm}</div>;
   }
 }

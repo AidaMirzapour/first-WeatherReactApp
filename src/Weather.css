@@ -1,0 +1,12 @@
+.Weather input{
+padding: 15px 20px;
+margin: 5px;
+border: none;
+box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Weather .submitInput{
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 5px;
+}
