@@ -3,3 +3,8 @@
   flex-direction: column;
   align-items: center;
 }
+
+.FooterLinks {
+  margin-top: 20px;
+  font-size: 12px;
+}
