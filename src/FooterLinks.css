@@ -1,0 +1,9 @@
+.FooterLinks {
+  margin: 20px auto;
+  font-size: 13px;
+}
+
+.FooterLinks a {
+  color: cornflowerblue;
+  text-decoration: none;
+}

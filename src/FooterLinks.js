@@ -1,4 +1,6 @@
 import React from "react";
+import "./FooterLinks.css";
+
 export default function FooterLinks() {
   return (
     <div className="FooterLinks">
@@ -8,7 +10,7 @@ export default function FooterLinks() {
         rel="noreferrer"
       >
         Open-source code
-      </a>
+      </a>{" "}
       , by{" "}
       <a
         href="https://github.com/AidaMirzapour"
